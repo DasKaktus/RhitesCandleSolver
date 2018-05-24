@@ -1,0 +1,25 @@
+
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  font-family: Impact;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Impact;
+}
+h3 {
+  font-size: 16px;
+  font-family: Times;
+}
+
+
+p {
+  color: red;
+  font-size: 32px;
+  font-family: Impact;
+}
+
+

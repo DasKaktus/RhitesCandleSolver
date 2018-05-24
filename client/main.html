@@ -1,0 +1,50 @@
+<head>
+  <title>Candle Solver</title>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-104954334-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+<body>
+  <h1 align="center">Candle holder solver</h1>
+  <div style="text-align: center;">
+    <div style="display: inline-block; text-align: left">
+      <h3> Step A: Interact with candle holder 1.</h3>
+      <h3> Step B: Enter IDs of glowing candle holder separated by commas (for example: 3,4,5).</h3>
+      <h3> Step C: Click submit.</h3>
+      <div align="center">
+        {{> solver}}
+      </div>
+      <h2 align="center"> Repeat steps A, B and C six more times (seven in total).</h2>
+      <h3> Step D: Interact with the candle holders in the same order as displayed in the solution.</h3>
+    </div>
+  </div>
+  <div align="center" class="image">
+    <img src="/images/map.png" alt="Map">
+    <h2>Locations of candle holders</h2>
+  </div>
+
+  <div align="center" class="foot">
+    by rhite and <a link rel="stylesheet" type="text/css" href="https://discord.gg/bfee">BFEE</a>
+  </div>
+</body>
+
+
+<template name="solver">
+  <form class="add-sequence">
+    {{#if notDone}}
+      <input type="text" name="sequence" class="form-control" placeholder="Enter sequence">
+      <input type="submit" value="Submit">
+    {{/if}}
+  </form>
+  <p>{{solution}}</p>
+</template>
+
